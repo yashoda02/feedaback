@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the User Feedback System</h1>
+        <p style="margin-bottom: 30px;">Submit your feedback and help us improve!</p>
+        <a href="{% url 'feedback_form' %}">Give Feedback</a>
+    </div>
+</body>
+</html>
